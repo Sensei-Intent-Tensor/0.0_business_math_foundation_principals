@@ -4,9 +4,11 @@
 
 **By Auto-Workspace-AI | Sensei Intent Tensor**
 
-**AI Collaborative Synthesis:** Claude, Gemini, ChatGPT, Grok
+**Human Collaborators:** Abdullah Khan, Armstrong Knight
 
-**Version 1.0 | December 2025**
+**AI Collaborators:** ChatGPT, Claude, Gemini, Grok
+
+**Version 2.0 | December 2025**
 
 ---
 
@@ -32,7 +34,18 @@ This document is the **business application** of Intent Tensor Theory — taking
 
 ---
 
-## The AutoWorkspace Master Equation
+# The Two Master Equations
+
+f(AutoWorkspace) provides two complementary mathematical frameworks:
+
+1. **The Execution Equation** — Operational dynamics (flow-based)
+2. **The Operational Value Tensor** — Strategic value creation (tensor-based)
+
+Both derive from the same coordinate system. Both are computable. They address different questions.
+
+---
+
+## Master Equation I: The Execution Equation
 
 ```
                                     A(t) · C(t) · R(t)
@@ -55,25 +68,7 @@ f(Execution) = W(Φ,Ψ,ε) · γ^t · ∫  ────────────�
 | **γ^t** | Decay | Memory/momentum erosion over time |
 | **∫dτ** | Accumulation | Execution potential compounds across periods |
 
----
-
-### The Interpretation
-
-**In plain English:**
-
-> *The probability of successful execution equals the writability gate times the time-decayed integral of (Alignment × Capacity × Rights) over total suppression (Drift + Friction + Entropy).*
-
-**The three laws embedded:**
-
-1. **Multiplicative Numerator:** Zero on ANY of Alignment, Capacity, or Rights collapses the whole signal. It's an AND-gate.
-2. **Additive Denominator:** Suppressors accumulate independently. Any single source of friction can kill execution.
-3. **Gated by Writability:** If intent doesn't match reality state (ΔΨ > ε), the integral is multiplied by zero. No amount of effort fixes bad targeting.
-
----
-
 ### The Collapsed Form
-
-For those who want it simpler:
 
 ```
         A · C · R
@@ -83,45 +78,80 @@ f(x) = ─────────── · W
 
 **Alignment times Capacity times Rights, divided by Drift plus Friction plus Entropy, gated by Writability.**
 
-That's the whole business. That's the whole operation. That's f(AutoWorkspace).
+---
+
+## Master Equation II: The Operational Value Tensor (OVT)
+
+```
+V = A_ijk R^i I^j E^k
+```
+
+**Where:**
+
+| Symbol | Name | Definition |
+|--------|------|------------|
+| **V** | Operational Value | Scalar output (ROI, Market Cap, Mission Success) |
+| **R^i** | Resource Vector | Quantifiable resource thresholds |
+| **I^j** | Intent Vector | Strategic coherence thresholds |
+| **E^k** | Execution Vector | Delivery stability thresholds |
+| **A_ijk** | Interaction Tensor | How the organization creates value |
+
+### The Minimum Viable Structure (MVS) Solution
+
+For the simplified case (i=1, j=2, k=1):
+
+```
+V = R¹E¹ [(1/e^(α₁·(θ_drift - 1)) · θ_drift) + (β₁·[tanh(θ_cohesion - 1) + 1] · θ_cohesion)]
+```
+
+This is not metaphor. This is a **solved equation** with specific functional forms.
 
 ---
 
-### The Instantaneous Kernel
+### The Relationship Between the Two Equations
 
-Inside the integral lives the **Execution Potential Function 𝒫** — the instantaneous readiness at a single moment:
+| Equation | Question Answered | Time Scale |
+|----------|-------------------|------------|
+| **Execution Equation** | "Can this action succeed right now?" | Instantaneous to short-term |
+| **OVT** | "Is this organization creating value?" | Strategic, long-term |
 
-```
-                    A_{r,t} · C_{r,t} · R_{r,t}
-𝒫_{r,t}(x)  =  ────────────────────────────────────
-                 D_{r,t} + F_{r,t} + H_{r,t}
-```
+The Execution Equation governs **operational dynamics**.
+The OVT governs **value creation physics**.
 
-**Subscript Notation (Implementation-Ready):**
-
-| Subscript | Meaning | Why It Matters |
-|-----------|---------|----------------|
-| **r** | Role/Function | Each role has unique alignment, capacity, authority |
-| **t** | Time index | Suppression changes by hour, day, quarter |
-| **x** | Action/Decision | Which specific execution event |
-
-**The Hierarchical Relationship:**
-
-```
-𝒫(x)      =  instantaneous execution potential (kernel)
-              ↓
-         integrate over time periods
-              ↓
-         apply momentum decay γ^t
-              ↓
-         gate by writability W(Φ,Ψ,ε)
-              ↓
-f(Execution) =  accumulated execution readiness (Master Equation)
-```
+Both derive from the same coordinate system: the Intent Tensor Theory's field operators.
 
 ---
 
-# Part I: The Nine Foundational Principles
+# Part I: The Coordinate System
+
+## The ITT Business Mapping
+
+The Intent Tensor Theory provides the mathematical foundation. Business roles map to vector calculus operators:
+
+| Role | Operator | Mathematical Function | Business Interpretation |
+|------|----------|----------------------|------------------------|
+| **CEO** | Φ | Scalar Intent Potential | The *Source Field* that seeds all action |
+| **CIO** | ∇Φ | Gradient Vector Field | The *Forward Collapse Surface* of information flow |
+| **CHRO** | ∇×F | Curl/Vorticity | The *Recursive Memory Loop* of culture and replacement |
+| **COO** | −∇²Φ | Negative Laplacian | *Compression Lock* — operational grounding |
+| **CFO** | +∇²Φ | Positive Laplacian | *Expansion Field* — resource distribution |
+
+### The ICHTB Business Analog
+
+The **Inverse Cartesian + Heisenberg Tensor Box (ICHTB)** from ITT provides six Fan Surfaces (Δ₁ through Δ₆) that act as **operator gates** evaluating action eligibility:
+
+| Fan Surface | ITT Operator | Business Function | Threshold Type |
+|-------------|--------------|-------------------|----------------|
+| **Δ₁** | ∇Φ (Tension) | Resource initiation | θ_start |
+| **Δ₂** | ∇×F (Phase Memory) | Strategic coherence | θ_drift |
+| **Δ₃** | Transition | Intent→Execution bridge | θ_cohesion |
+| **Δ₄** | −∇²Φ (Compression) | Execution lock | θ_lock |
+| **Δ₅** | +∇²Φ (Expansion) | Resource distribution | θ_expand |
+| **Δ₆** | Stability | System equilibrium | θ_stable |
+
+---
+
+# Part II: The Nine Foundational Principles
 
 ## Principle 1: The Writability Doctrine
 
@@ -143,28 +173,18 @@ Where:
 
 ### The Gaussian Softening
 
-For probabilistic systems, replace hard binary with soft threshold:
+For probabilistic systems:
 
 ```
 W(x) = exp(−(ΔΨ)² / 2ε²)
-
-Approaches 1 as gap → 0
-Approaches 0 as gap → ∞
-Smooth gradient for optimization
 ```
 
-### The Implementation
+### Implementation
 
 ```javascript
 function isWritable(intent, reality, threshold) {
   const gap = computeGap(intent, reality);
   return gap <= threshold;
-}
-
-// Soft version for ML systems
-function writabilityScore(intent, reality, epsilon) {
-  const gap = computeGap(intent, reality);
-  return Math.exp(-(gap * gap) / (2 * epsilon * epsilon));
 }
 
 // Before ANY action:
@@ -175,35 +195,13 @@ if (!isWritable(Φ, Ψ, ε)) {
 execute();
 ```
 
-### The Skip Taxonomy
-
-Not all skips are equal. Classify them:
-
-| Skip Type | Condition | Action |
-|-----------|-----------|--------|
-| **Structural** | Missing required field | Log, defer to data team |
-| **Temporal** | Not yet ready (future date) | Queue for later |
-| **Authority** | No decision rights | Escalate or reassign |
-| **Capacity** | System overloaded | Throttle, retry later |
-| **Intent** | Gap too large | Fundamental mismatch, requires strategy change |
-
-### Why This Matters
-
-Traditional systems process every row, every lead, every task—then filter failures afterward. This is **exponential waste**.
-
-The Writability Doctrine inverts the flow:
-- **Old:** Process → Filter → (Waste 80%)
-- **New:** Filter → Process → (Skip 80% upfront)
-
 ### Measured Impact
 
-From real MetaMap implementations:
 ```
 Total Rows:    3,650
 Processable:   1,517 (41.6%)
 Skipped:       2,133 (58.4%)
 CPU Savings:   ~60%
-Error Rate:    -81% (0.8% vs 4.2%)
 ```
 
 ---
@@ -223,69 +221,24 @@ Where:
   D_r     = Divergence for role r
   V_r     = Value reported by role r
   T_r(S)  = True value derived from Source S
-  || ||   = Distance norm (Euclidean, Manhattan, or domain-specific)
+  || ||   = Distance norm
 ```
 
-### The Norm Selection
+### The Write Law (from ITT)
 
-Different business contexts require different distance metrics:
+For the business system to remain stable:
 
-| Norm | Formula | Use Case |
-|------|---------|----------|
-| **L1 (Manhattan)** | Σ\|v_i - t_i\| | Sparse differences, outlier-robust |
-| **L2 (Euclidean)** | √(Σ(v_i - t_i)²) | General purpose, smooth gradients |
-| **L∞ (Chebyshev)** | max\|v_i - t_i\| | Worst-case focus |
-| **Cosine** | 1 - (V·T)/(||V|| ||T||) | Direction matters more than magnitude |
-| **Mahalanobis** | √((V-T)ᵀΣ⁻¹(V-T)) | Accounts for correlations |
+1. There is only one state variable: the Store vector S
+2. Every role r holds a view V_r, which is a pure transformation of S: V_r = T_r(S)
+3. Misalignment is quantified by Divergence D_r
 
-### The Role Decomposition
-
-| Role | What They Report (V_r) | Truth Source T_r(S) | Divergence Meaning |
-|------|------------------------|---------------------|-------------------|
-| **CEO** | Strategic position | Market + financials | Vision vs. reality gap |
-| **CIO** | System state | Actual infrastructure | Tech debt |
-| **CFO** | Financial position | Ledger + actuals | Accounting accuracy |
-| **COO** | Operational status | Process metrics | Execution fidelity |
-| **CHRO** | Workforce state | HR systems + surveys | Culture alignment |
-
-### The Aggregate Metrics
-
-**Total Organizational Divergence:**
-```
-D_total = Σ w_r · D_r
-
-Where w_r = importance weight for role r
-```
-
-**Weighted RMS Divergence (for optimization):**
-```
-D_rms = √(Σ w_r · D_r² / Σ w_r)
-```
-
-**Max Divergence (for risk):**
-```
-D_max = max_r(D_r)
-
-Critical threshold: If D_max > θ_critical → immediate intervention
-```
-
-### The Divergence Velocity
-
-Rate of change matters:
+### Aggregate Metrics
 
 ```
-Ḋ_r = dD_r/dt = (D_r(t) - D_r(t-1)) / Δt
-
-Ḋ > 0 → Diverging (getting worse)
-Ḋ = 0 → Stable (holding position)
-Ḋ < 0 → Converging (improving)
+D_total = Σ w_r · D_r        (Weighted sum)
+D_rms = √(Σ w_r · D_r² / Σ w_r)  (RMS)
+D_max = max_r(D_r)           (Worst case)
 ```
-
-### Why This Matters
-
-When someone says "we're aligned," ask: **What's your divergence metric?**
-
-If they can't answer with a number, they're not aligned—they're hoping.
 
 ---
 
@@ -293,92 +246,32 @@ If they can't answer with a number, they're not aligned—they're hoping.
 
 ### The Core Thesis
 
-Misalignment has a cost. That cost follows physics: it's proportional to the **square** of the divergence.
+Misalignment has a cost. That cost follows physics: proportional to the **square** of divergence.
 
 ### The Equation
 
 ```
 E_intent = Σ w_r · D_r²
-
-Where:
-  E_intent = Total "energy" required to maintain current state
-  w_r      = Weight for role r
-  D_r      = Divergence for role r
 ```
 
-### The Physics Analogy
+### The Physics
 
 Like a spring stretched from equilibrium:
-- Small divergence (D=1): Energy = 1
-- Medium divergence (D=2): Energy = 4
-- Large divergence (D=3): Energy = 9
+- D=1: Energy = 1
+- D=2: Energy = 4
+- D=3: Energy = 9
 
-**Misalignment costs scale quadratically, not linearly.**
-
-### The Power Law Generalization
-
-For different organizational dynamics:
-
-```
-E_intent = Σ w_r · D_r^p
-
-Where p = power exponent:
-  p = 1: Linear cost (forgiving systems)
-  p = 2: Quadratic cost (standard, like springs)
-  p = 3: Cubic cost (brittle systems, cascading failures)
-```
-
-### The Gradient
-
-For optimization, we need the gradient:
-
-```
-∇E = 2 · Σ w_r · D_r · ∇D_r
-
-Points toward steepest increase in energy.
-Move opposite to reduce energy: Δx = -α∇E
-```
+**Misalignment costs scale quadratically.**
 
 ### The Optimization Target
 
 ```
 minimize E_intent = minimize Σ w_r · D_r²
 
-Subject to:
-  - Resource constraints: Σ c_r ≤ C_total
-  - Time constraints: t ≤ T_deadline
-  - Authority constraints: R_r = 1 for all active roles
+Subject to: Resource, time, and authority constraints
 ```
 
-This is a **least-squares optimization problem**—one of the most well-studied forms in mathematics.
-
-### The Energy Landscape
-
-Visualize E_intent as a surface over the state space:
-
-```
-High E_intent = Peaks (unstable, expensive to maintain)
-Low E_intent  = Valleys (stable, efficient)
-Saddle points = Transition states (risky)
-
-Goal: Navigate to lowest valley (global minimum)
-```
-
-### Why This Matters
-
-A company with five roles each at D=2 divergence:
-```
-E = 5 × (2)² = 20 units
-```
-
-The same company with one role at D=4 and four at D=1:
-```
-E = 1×(4)² + 4×(1)² = 16 + 4 = 20 units
-```
-
-**Same total energy, but different intervention strategies:**
-- Scenario 1: Distributed problem, needs broad improvement
-- Scenario 2: Concentrated problem, fix the one outlier
+This is a **least-squares optimization problem** — one of the most well-studied forms in mathematics.
 
 ---
 
@@ -386,83 +279,28 @@ E = 1×(4)² + 4×(1)² = 16 + 4 = 20 units
 
 ### The Core Thesis
 
-Information has a cost structure. Single sources of truth scale linearly. Multiple sources scale exponentially.
+Single sources of truth scale linearly. Multiple sources scale exponentially.
 
 ### The Equations
 
-**Single Source of Truth:**
 ```
-W(1) ~ O(n)
-
-Work scales linearly with data volume.
-```
-
-**Multiple Sources (k sources):**
-```
-W(k) ~ O(k² · n) → O(e^k) as reconciliation compounds
-
-Work scales exponentially with source count.
+W(1) ~ O(n)                    Single source
+W(k) ~ O(k² · n) → O(e^k)      Multiple sources
 ```
 
 ### The Reconciliation Tax
 
-Every additional source of truth imposes a **reconciliation tax**:
-
 ```
 Tax(k) = C_base · k · (k-1) / 2
-
-Where:
-  k      = Number of sources
-  C_base = Cost per reconciliation pair
 ```
 
-| Sources (k) | Reconciliation Pairs | Relative Cost |
-|-------------|---------------------|---------------|
+| Sources (k) | Pairs | Relative Cost |
+|-------------|-------|---------------|
 | 1 | 0 | 1x |
 | 2 | 1 | 2x |
 | 3 | 3 | 4x |
-| 4 | 6 | 7x |
 | 5 | 10 | 11x |
 | 10 | 45 | 46x |
-
-### The Information Theory Foundation
-
-From Shannon:
-```
-H(S₁, S₂, ..., Sₖ) ≤ Σ H(Sᵢ)
-
-Joint entropy ≤ Sum of individual entropies
-```
-
-Equality holds only when sources are **independent**. In business, they never are. The gap is the reconciliation cost.
-
-### The Mutual Information Cost
-
-```
-I(S₁; S₂) = H(S₁) + H(S₂) - H(S₁, S₂)
-
-Mutual information = redundancy = reconciliation overhead
-```
-
-Higher mutual information = more overlap = more chances for conflict = higher reconciliation cost.
-
-### The Optimal Source Count
-
-Given reconciliation costs and query benefits:
-
-```
-k* = argmin_k [Tax(k) + Query_Cost(k)]
-
-Where Query_Cost(k) = C_query / k  (more sources = faster queries)
-```
-
-Usually k* = 1 or 2. Rarely higher.
-
-### Why This Matters
-
-"We have multiple systems for flexibility" = "We pay exponential reconciliation tax for the illusion of choice."
-
-The math doesn't care about your org chart justifications.
 
 ---
 
@@ -470,81 +308,35 @@ The math doesn't care about your org chart justifications.
 
 ### The Core Thesis
 
-Execution "locks" when two conditions converge:
-1. **Curvature** (S_curv): The geometry of the decision surface reaches a critical point
-2. **Memory** (S_mem): Accumulated evidence crosses threshold
+Execution "locks" when curvature and memory converge.
 
 ### The Equation
 
 ```
 M(x,t) = α · S_curv(x) + (1−α) · S_mem(x,t)
+```
 
-Where:
-  M(x,t)    = Lock metric at point x, time t
-  S_curv(x) = Curvature score (geometric readiness)
-  S_mem(x,t)= Memory score (accumulated evidence)
-  α         = Weighting parameter [0,1]
+### Components
+
+**Curvature Stability (S_curv):**
+```
+S_curv ∝ 1 / Var(∇²Φ)
+
+High S_curv = Operational consistency
+```
+
+**Memory Coherence (S_mem):**
+```
+S_mem ∝ Autocorrelation(Ω)
+
+High S_mem = Structural cohesion
 ```
 
 ### Execution Lock Condition
 
 ```
 Execute when: M(x,t) > θ_lock
-
-Where θ_lock = execution threshold
 ```
-
-### The Curvature Component
-
-```
-S_curv(x) = |∇²Φ(x)| / max|∇²Φ|
-
-Normalized Laplacian—how "peaked" is the intent surface at this point?
-```
-
-High curvature = decision point (peak or valley in the landscape)
-Low curvature = flat region (no natural decision boundary)
-
-**The Hessian Decomposition:**
-
-```
-∇²Φ = [∂²Φ/∂x_i∂x_j]  (Hessian matrix)
-
-Eigenvalues λ₁, λ₂, ..., λₙ determine:
-  All λ > 0: Local minimum (stable execution point)
-  All λ < 0: Local maximum (unstable, avoid)
-  Mixed signs: Saddle point (transition state)
-```
-
-### The Memory Component
-
-```
-S_mem(x,t) = ∫₀ᵗ Evidence(τ) · γ^(t-τ) dτ
-
-Time-weighted accumulated evidence with decay γ
-```
-
-**Discrete Implementation:**
-```
-S_mem(t) = γ · S_mem(t-1) + Evidence(t)
-```
-
-### The α Parameter Selection
-
-| α Value | Interpretation | Use Case |
-|---------|----------------|----------|
-| α = 1.0 | Pure geometry | Structural decisions, no history needed |
-| α = 0.5 | Balanced | General business decisions |
-| α = 0.0 | Pure memory | Experience-driven, pattern matching |
-| α adaptive | Context-dependent | ML-optimized per decision type |
-
-### Why This Matters
-
-The Lock Metric unifies two schools of thought:
-- **Geometric decision theory:** Execute at critical points
-- **Evidence accumulation:** Execute when confidence threshold crossed
-
-Both are right. M(x,t) combines them.
 
 ---
 
@@ -552,7 +344,7 @@ Both are right. M(x,t) combines them.
 
 ### The Core Thesis
 
-Business stability is a **Boolean function** of role states. Each role is either stable (1) or unstable (0). The combination determines system behavior.
+Business stability is a Boolean function of role states.
 
 ### The Truth Table
 
@@ -564,13 +356,6 @@ Business stability is a **Boolean function** of role states. Each role is either
 | 1 | 1 | 0 | 1 | 1 | Financial Risk | CFO intervention |
 | 1 | 0 | 1 | 1 | 1 | Tech Debt | CIO intervention |
 | 0 | 1 | 1 | 1 | 1 | Vision Drift | CEO intervention |
-| 1 | 1 | 0 | 0 | 1 | Ops-Finance Misalign | Joint COO-CFO |
-| 0 | 0 | 1 | 1 | 1 | Strategy-Tech Gap | Joint CEO-CIO |
-| 1 | 0 | 0 | 1 | 1 | Tech-Finance Crisis | Joint CIO-CFO |
-| 0 | 1 | 1 | 0 | 1 | Strategy-Ops Gap | Joint CEO-COO |
-| 1 | 1 | 1 | 0 | 0 | People-Ops Crisis | Joint COO-CHRO |
-| 0 | 0 | 0 | 1 | 1 | Leadership Crisis | Board intervention |
-| 1 | 0 | 0 | 0 | 1 | Systemic Ops Failure | Full ops restructure |
 | 0 | 0 | 0 | 0 | 0 | **CRITICAL** | Full restructure |
 
 ### The Stability Function
@@ -578,46 +363,8 @@ Business stability is a **Boolean function** of role states. Each role is either
 ```
 Stability = CEO ∧ CIO ∧ CFO ∧ COO ∧ CHRO
 
-Where:
-  ∧ = AND operation
-  Each role ∈ {0, 1}
+Role_State(r) = 1 if D_r ≤ θ_r else 0
 ```
-
-### Role State Computation
-
-Each role's binary state derives from divergence threshold:
-
-```
-Role_State(r) = {
-  1  if D_r ≤ θ_r  (divergence within tolerance)
-  0  if D_r > θ_r  (divergence exceeds tolerance)
-}
-```
-
-### The Cascade Function
-
-Some failures trigger others. Model as directed graph:
-
-```
-CEO=0 → P(CIO=0|CEO=0) = 0.4   (vision drift causes tech confusion)
-CFO=0 → P(COO=0|CFO=0) = 0.6   (financial pressure causes ops cuts)
-CHRO=0 → P(all)↓              (culture affects everything)
-```
-
-**Cascade Probability:**
-```
-P(Cascade) = Π P(role_i=0 | parent_failures)
-```
-
-### Why This Matters
-
-This is a **diagnostic tool**. Given any business state:
-1. Compute D_r for each role
-2. Convert to binary via thresholds
-3. Look up in truth table
-4. Execute prescribed intervention
-
-No intuition required. The math prescribes the action.
 
 ---
 
@@ -625,65 +372,25 @@ No intuition required. The math prescribes the action.
 
 ### The Core Thesis
 
-Reality drifts from intent over time. The rate of drift determines intervention urgency.
+Reality drifts from intent. The rate determines urgency.
 
 ### The Drift Equation
 
 ```
 Ḋ = ∂D/∂t = ∇Ψ / ∇Φ
-
-Where:
-  Ḋ   = Drift rate (time derivative of divergence)
-  ∇Ψ  = Gradient of reality (how fast reality is changing)
-  ∇Φ  = Gradient of intent (how fast intent is changing)
 ```
 
-### The Drift Classification
-
-| Ḋ Value | State | Meaning | Action |
-|---------|-------|---------|--------|
-| Ḋ << 0 | Rapid Convergence | Improving fast | Maintain strategy |
-| Ḋ < 0 | Convergence | Improving | Monitor |
-| Ḋ ≈ 0 | Stable | Holding | Assess if acceptable |
-| Ḋ > 0 | Divergence | Worsening | Intervene |
-| Ḋ >> 0 | Rapid Divergence | Crisis | Emergency action |
-
-### The Drift Correction Control Law
-
-Proportional-Integral-Derivative (PID) control:
+### PID Control
 
 ```
 u(t) = K_p · D(t) + K_i · ∫D(τ)dτ + K_d · Ḋ(t)
-
-Where:
-  u(t) = Correction force
-  K_p  = Proportional gain (respond to current error)
-  K_i  = Integral gain (eliminate accumulated error)
-  K_d  = Derivative gain (dampen oscillations)
 ```
 
-### The Drift Prediction
+### Time to Critical
 
-Using current drift rate, predict future divergence:
-
-```
-D(t+Δt) ≈ D(t) + Ḋ(t)·Δt + ½·D̈(t)·Δt²
-
-Second-order Taylor expansion
-```
-
-**Time to Critical:**
 ```
 t_critical = (θ_critical - D(t)) / Ḋ(t)
-
-If Ḋ > 0, this is time until threshold breach
 ```
-
-### Why This Matters
-
-Knowing D_r tells you where you are.
-Knowing Ḋ_r tells you where you're going.
-The second is often more important.
 
 ---
 
@@ -691,56 +398,21 @@ The second is often more important.
 
 ### The Core Thesis
 
-Capacity is not just "do we have resources?" — it's a dynamic function of load, bandwidth, and queue depth.
+Capacity is dynamic: load, bandwidth, and queue depth.
 
-### The Capacity Equation
+### The Equation
 
 ```
 C(t) = B(t) / [L(t) + Q(t)]
-
-Where:
-  C(t) = Available capacity ratio
-  B(t) = Bandwidth (maximum throughput)
-  L(t) = Current load (active work)
-  Q(t) = Queue depth (pending work)
 ```
 
-### The Queueing Theory Integration
+### Queueing Theory
 
-From M/M/1 queue:
 ```
-ρ = λ/μ  (utilization = arrival rate / service rate)
+ρ = λ/μ  (utilization)
 
-Average wait time: W = 1/(μ - λ)
-Queue length: L_q = λ²/(μ(μ-λ))
+As ρ → 1, wait time → ∞
 ```
-
-**Critical insight:** As ρ → 1, wait time → ∞
-
-### The Capacity Zones
-
-| C Value | Zone | Behavior |
-|---------|------|----------|
-| C > 1.5 | Slack | Can absorb spikes, fast response |
-| 1.0 < C ≤ 1.5 | Healthy | Normal operations |
-| 0.8 < C ≤ 1.0 | Stressed | Queue building, delays starting |
-| 0.5 < C ≤ 0.8 | Overloaded | Significant delays, errors rising |
-| C ≤ 0.5 | Critical | System degradation, failures likely |
-
-### The Elastic Capacity Model
-
-For systems that can scale:
-```
-B(t) = B_base + B_elastic(demand(t))
-
-Where B_elastic = min(B_max - B_base, k · excess_demand)
-```
-
-### Why This Matters
-
-Alignment without capacity is a wish list.
-Rights without capacity is authority theater.
-Only with sufficient C does A × R translate to execution.
 
 ---
 
@@ -748,150 +420,210 @@ Only with sufficient C does A × R translate to execution.
 
 ### The Core Thesis
 
-Decision rights are not binary. They form a topology: who can decide what, under which conditions, with whose approval.
+Decision rights form a topology: who, what, when, with whose approval.
 
-### The Rights Function
+### The Equation
 
 ```
 R(d, a, c) = Authority(a, d) ∧ Scope(d, c) ∧ ¬Veto(d)
-
-Where:
-  d = Decision
-  a = Actor attempting decision
-  c = Context (budget, risk level, domain)
-  
-  Authority(a,d) = Does actor a have authority over decision d?
-  Scope(d,c) = Is decision d within context c bounds?
-  ¬Veto(d) = Is there no active veto on decision d?
 ```
-
-### The Authority Matrix
-
-```
-       │ Strategic │ Financial │ Technical │ Operational │ People │
-───────┼───────────┼───────────┼───────────┼─────────────┼────────┤
-CEO    │     1     │    0.8    │    0.3    │     0.5     │   0.7  │
-CFO    │    0.3    │     1     │    0.2    │     0.4     │   0.3  │
-CIO    │    0.4    │    0.3    │     1     │     0.6     │   0.4  │
-COO    │    0.3    │    0.4    │    0.5    │      1      │   0.6  │
-CHRO   │    0.2    │    0.2    │    0.2    │     0.4     │    1   │
-```
-
-Values represent decision authority weight (0 to 1).
-
-### The Scope Boundaries
-
-```
-Scope(d, c) = {
-  1  if value(d) ≤ threshold(role, category)
-  0  otherwise
-}
-
-Example thresholds:
-  Manager: $10K
-  Director: $100K
-  VP: $1M
-  C-level: $10M
-  Board: Unlimited
-```
-
-### The Veto Network
-
-```
-Veto(d) = ∃ v ∈ Veto_Holders : v.active(d)
-
-Veto holders typically:
-  - Legal (compliance)
-  - Finance (budget)
-  - Security (risk)
-  - Board (governance)
-```
-
-### The Effective Rights Score
-
-Aggregate across dimensions:
-
-```
-R_effective = Σ w_i · R(d_i, a, c_i) / Σ w_i
-
-Where w_i = importance weight for decision type i
-```
-
-### Why This Matters
-
-"We're empowered to act" means nothing without:
-- Clear authority mapping
-- Defined scope boundaries
-- Known veto conditions
-
-R = 1 only when all three align.
 
 ---
 
-# Part II: The Control Decomposition
+# Part III: The Threshold Derivations
 
-## Chapter 10: The Critique of "Control"
+## The Three Core Thresholds
 
-### 10.1 The Problem with "Control"
+The Operational Value Tensor requires three critical thresholds that govern eligibility and stability.
 
-The management literature is saturated with control:
+### Threshold 1: θ_drift (Strategic Drift)
 
-> "Management is the process of planning, organizing, leading, and **controlling**."
-
-> "Effective leaders maintain **control** of their organizations."
-
-> "We need better **control** systems."
-
-**This is wrong.** Not because control doesn't matter, but because:
-
-1. **Circular Logic:** "They succeeded because they had control" / "They had control because they succeeded" explains nothing.
-2. **Unmeasurable:** No one has ever done science on whether it's actually control they achieved. Control is a post-hoc label.
-3. **Not Computable:** "Establish control" is not an instruction a machine can execute.
-
-### 10.2 The Core Thesis
-
-**Control is not a cause—it is a symptom.**
-
-Control is the label we apply **after** the execution has already succeeded. It's a rationalization, not a driver.
-
-The question "do we have control?" is unmeasurable.
-
-The question "are we ready to execute?" is computable.
-
-### 10.3 What Control Actually Is
-
-What management calls "control" decomposes into three measurable components:
-
-**Alignment (A) — The Gap Measure:**
-
-How close is reality to intent? Computed via divergence metric.
+**Definition:** Maximum acceptable deviation before strategy fails.
 
 ```
-A = 1 − D_normalized = 1 − (D_r / D_max)
+θ_drift = Deviation from Strategic Target / Total Available Buffer
 ```
 
-**Capacity (C) — The Bandwidth Measure:**
+**Condition:** If θ_drift > 1, the Intent Vector is ineligible for continued execution.
 
-Can the system handle the load? Computed via resource availability.
+**ITT Mapping:** Governs Phase Memory Gate (Δ₂ = ∇×F)
+
+---
+
+### Threshold 2: θ_cohesion (Intent Cohesion)
+
+**The Critical Void:** This threshold quantifies the missing link between Intent and Execution.
+
+**Definition:** The ratio of coherent flow to entropic flow.
 
 ```
-C = Resources_Available / Resources_Required
+θ_cohesion = R_Align / R_Drift
+
+Where:
+  R_Align = Value of Deliverables Accepted / Time Elapsed
+  R_Drift = Cost of Rework / Total Duration
 ```
 
-**Rights (R) — The Authority Measure:**
-
-Is someone empowered to decide? Computed via decision topology.
+**The Recursive Integrity Condition:**
 
 ```
-R = {
-  1  if clear_owner(decision) ∧ authority_granted(owner)
-  0  otherwise
-}
+If θ_cohesion > 1: Intent is Recursively Cohesive with Execution
+If θ_cohesion ≤ 1: Phase Conflict — signal dissolved into noise
 ```
 
-### 10.4 The Control Equation
+**Interpretation:**
+- θ_cohesion > 1: Rate of aligned value exceeds rate of drift loss. **Resonant Recursion.**
+- θ_cohesion ≤ 1: Cost of misalignment equals or exceeds aligned delivery. **Stalled Loop.**
 
-Replacing "control" with computable components:
+**This is genuinely novel.** It quantifies whether strategy translates to execution as a ratio of flow rates.
+
+---
+
+### Threshold 3: θ_lock (Execution Lock)
+
+**Definition:** Minimum force required for stable collapse.
+
+```
+θ_lock = Final Value Score per Resource Unit / Entropy per Value Unit
+```
+
+**Interpretation:** This is the **Return on Execution Energy (ROEE)**. If θ_lock < 1, the execution is too diffuse to achieve stable outcome.
+
+**ITT Mapping:** Governs Compression Lock Fan (Δ₄ = −∇²Φ)
+
+---
+
+## The Threshold Dependency Chain
+
+```
+θ_start (Resources) → θ_drift (Intent) → θ_cohesion (Transition) → θ_lock (Execution)
+                                              ↑
+                                    THE CRITICAL VOID
+                                    (Now mathematically defined)
+```
+
+If θ_cohesion ≤ 1, the Execution Lock (−∇²Φ) will be unstable regardless of θ_lock value.
+
+**Execution success is the proof of Intent Cohesion.**
+
+---
+
+# Part IV: The Interaction Tensor Solution
+
+## Deriving A_ijk
+
+The Interaction Tensor components are not constants — they are **influence functions**.
+
+### Component A_111: Internal Stability Weight
+
+Weights the influence of drift on value. Excessive drift reduces value.
+
+```
+A_111 = 1 / e^(α₁ · (I¹ - 1))
+
+Where:
+  I¹ = θ_drift
+  α₁ = Organizational Rigidity Factor
+```
+
+**Behavior:**
+- If I¹ = 1 (at threshold): A_111 = 1
+- If I¹ < 1 (stable): A_111 > 1 (reward)
+- If I¹ > 1 (exceeded): A_111 → 0 (collapse)
+
+---
+
+### Component A_121: Cohesion Integrity Weight
+
+Weights the influence of cohesion on value. High cohesion increases value.
+
+```
+A_121 = β₁ · [tanh(I² - 1) + 1]
+
+Where:
+  I² = θ_cohesion
+  β₁ = Organizational Leverage Factor
+```
+
+**Behavior:**
+- If I² = 1 (threshold): A_121 ≈ β₁
+- If I² > 1 (high cohesion): A_121 → 2β₁ (amplification)
+- If I² < 1 (phase conflict): A_121 → 0 (value destruction)
+
+---
+
+## The MVS Operational Value Equation
+
+```
+V = R¹E¹ [(1/e^(α₁·(θ_drift - 1)) · θ_drift) + (β₁·[tanh(θ_cohesion - 1) + 1] · θ_cohesion)]
+```
+
+This grounds abstract tensor notation in **measurable, dimensionless thresholds**.
+
+---
+
+## Organizational Constants
+
+### α₁: Organizational Rigidity Factor
+
+**Definition:** Severity of penalty for theoretical/strategic drift.
+
+**For rigorous organizations:** α₁ >> 1 (high sensitivity to deviation)
+
+### β₁: Organizational Leverage Factor
+
+**Definition:** Maximum potential amplification of aligned intent.
+
+**For high-leverage organizations:** β₁ >> 1 (coherence dramatically amplifies value)
+
+**These must be empirically measured** by observing organizational response to strategic change.
+
+---
+
+# Part V: The Intent-Truth Calculus
+
+## From Boolean to Continuous
+
+The Stability Truth Table provides Boolean state. The **Intent-Truth Calculus** provides continuous probability.
+
+### The Intent-Truth Probability
+
+```
+T_prob(M) = σ(κ · (M - θ))
+
+Where:
+  σ(x) = 1 / (1 + e^(-x))   Sigmoid function
+  M = Lock Metric
+  θ = Collapse Threshold
+  κ = Sensitivity Factor
+```
+
+### Parameter Interpretation
+
+| Parameter | Recommended | Rationale |
+|-----------|-------------|-----------|
+| **α** | 0.6 | Prioritize operational consistency over memory |
+| **θ** | 0.75 | High-risk zone begins below 0.75 |
+| **κ** | 12 | Sharp transition for actionable alerts |
+
+### KPI Proxy Mappings
+
+| Metric | KPI Proxy | Normalization |
+|--------|-----------|---------------|
+| S_curv | Normalized Price Variance | Ŝ_curv = 1 - Var(Pricing)/MaxVar |
+| S_mem | Inverse Turnover Rate | Ŝ_mem = max(0, 1 - Turnover/TargetMax) |
+
+---
+
+# Part VI: The Control Decomposition
+
+## The Critique of "Control"
+
+**Control is not a cause — it is a symptom.**
+
+Control is the label we apply **after** execution succeeds. It's rationalization, not driver.
+
+### What Control Actually Is
 
 ```
                     A × C × R
@@ -899,30 +631,25 @@ f(Control) = ─────────────────────
               D + F + H
 ```
 
-**Control is what we CALL it when:**
+**Control emerges when:**
 - Alignment is high (reality matches intent)
 - Capacity is sufficient (system not overloaded)
 - Rights are clear (someone can decide)
 - Drift, Friction, and Entropy are low
 
-### 10.5 Legacy Translation
+### Legacy Translation
 
 | Old Question | New Question |
 |--------------|--------------|
 | "Do we have control?" | "What's our alignment score?" |
 | "How do we establish control?" | "How do we reduce divergence?" |
-| "Control is maintained" | "A × C × R exceeds threshold" |
 | "We lost control" | "Drift exceeded correction capacity" |
 
 ---
 
-# Part III: The Execution Engine
+# Part VII: Implementation
 
-## Chapter 11: PRE-X MetaMapping
-
-### 11.1 Core Architecture
-
-The PRE-X (Precomputed Recursive Execution) pattern:
+## The PRE-X MetaMap Pattern
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
@@ -930,671 +657,156 @@ The PRE-X (Precomputed Recursive Execution) pattern:
 ├─────────────────────────────────────────────────────────────┤
 │                                                             │
 │  1. PRECOMPUTE                                              │
-│     └─ Load all data into memory                            │
-│     └─ Build eligibility index                              │
-│     └─ Cache reference lookups                              │
-│     └─ Compute writability scores                           │
+│     └─ Load all data, build eligibility index               │
 │                                                             │
 │  2. FILTER (Writability Gate)                               │
-│     └─ For each row: W(x) = δ(Φ−Ψ) > ε ?                   │
-│     └─ If W=0: Skip (log reason, categorize)                │
-│     └─ If W=1: Add to execution queue                       │
+│     └─ W(x) = δ(Φ−Ψ) > ε ?                                 │
+│     └─ Skip ineligible, queue eligible                      │
 │                                                             │
 │  3. EXECUTE                                                 │
-│     └─ Process only writable rows                           │
-│     └─ Batch operations where possible                      │
-│     └─ Parallel processing for independent actions          │
-│     └─ Log outcomes for drift tracking                      │
+│     └─ Process writable rows only                           │
 │                                                             │
 │  4. RECONCILE                                               │
 │     └─ Compare outcomes to intent                           │
 │     └─ Update divergence metrics                            │
-│     └─ Compute drift rates                                  │
-│     └─ Adjust thresholds for next cycle                     │
 │                                                             │
-│  5. LEARN (Optional Autonomous Layer)                       │
-│     └─ Update policy based on outcomes                      │
-│     └─ Optimize threshold parameters                        │
-│     └─ Predict future writability                           │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-### 11.2 Implementation Pattern
-
-```javascript
-class PreXMetaMap {
-  constructor(config) {
-    this.threshold = config.threshold || 0.15;
-    this.gamma = config.gamma || 0.88;
-    this.cache = new Map();
-    this.metrics = { processed: 0, skipped: 0, errors: 0 };
-  }
-
-  // 1. PRECOMPUTE
-  precompute(data) {
-    // Build eligibility index
-    this.eligibilityIndex = data.map(row => ({
-      id: row.id,
-      writable: this.computeWritability(row),
-      priority: this.computePriority(row)
-    }));
-    
-    // Sort by priority for optimal processing order
-    this.eligibilityIndex.sort((a, b) => b.priority - a.priority);
-    
-    // Cache reference lookups
-    this.buildCache(data);
-    
-    return this.eligibilityIndex;
-  }
-
-  // 2. FILTER
-  filter(data, intent) {
-    const writable = [];
-    const skipped = [];
-    
-    for (const row of data) {
-      const gap = this.computeGap(row, intent);
-      const writabilityScore = Math.exp(-(gap * gap) / (2 * this.threshold * this.threshold));
-      
-      if (writabilityScore > 0.5) {  // Soft threshold
-        writable.push({ row, score: writabilityScore });
-      } else {
-        skipped.push({ 
-          row, 
-          reason: this.classifySkip(row, gap),
-          gap: gap 
-        });
-      }
-    }
-    
-    this.metrics.processed = writable.length;
-    this.metrics.skipped = skipped.length;
-    
-    return { writable, skipped };
-  }
-
-  // 3. EXECUTE
-  async execute(writable) {
-    const results = [];
-    const batches = this.batchify(writable, 100);  // Batch size
-    
-    for (const batch of batches) {
-      const batchResults = await Promise.all(
-        batch.map(item => this.executeOne(item))
-      );
-      results.push(...batchResults);
-    }
-    
-    return results;
-  }
-
-  // 4. RECONCILE
-  reconcile(results, intent) {
-    const divergences = results.map(r => ({
-      id: r.id,
-      divergence: this.computeDivergence(r.outcome, intent),
-      drift: this.computeDrift(r)
-    }));
-    
-    // Update running metrics
-    this.updateMetrics(divergences);
-    
-    // Adjust thresholds if needed
-    this.adaptThresholds(divergences);
-    
-    return {
-      avgDivergence: this.mean(divergences.map(d => d.divergence)),
-      maxDivergence: Math.max(...divergences.map(d => d.divergence)),
-      driftRate: this.mean(divergences.map(d => d.drift)),
-      efficiency: this.metrics.processed / (this.metrics.processed + this.metrics.skipped)
-    };
-  }
-
-  // Helper methods
-  computeGap(row, intent) {
-    // Euclidean distance in feature space
-    return Math.sqrt(
-      Object.keys(intent).reduce((sum, key) => {
-        const diff = (row[key] || 0) - intent[key];
-        return sum + diff * diff;
-      }, 0)
-    );
-  }
-
-  classifySkip(row, gap) {
-    if (!row.requiredField) return 'STRUCTURAL';
-    if (row.futureDate > Date.now()) return 'TEMPORAL';
-    if (!row.hasAuthority) return 'AUTHORITY';
-    if (gap > this.threshold * 3) return 'INTENT_MISMATCH';
-    return 'CAPACITY';
-  }
-
-  computePriority(row) {
-    // Higher priority = process first
-    return row.value * row.urgency / (row.complexity + 1);
-  }
-}
-```
-
-### 11.3 Measured Results
-
-From production deployments:
-
-| Metric | Before PRE-X | After PRE-X | Improvement |
-|--------|--------------|-------------|-------------|
-| Rows Processed | 3,650 | 1,517 | -58% |
-| CPU Time | 45 min | 12 min | -73% |
-| Error Rate | 4.2% | 0.8% | -81% |
-| Drift Detection | Manual | Automatic | ∞ |
-| Threshold Adaptation | None | Continuous | New capability |
-
----
-
-## Chapter 12: Collapse Scheduling
-
-### 12.1 The Collapse Probability
-
-Not all actions should execute immediately. The collapse probability determines **when**:
-
-```
-P_collapse(x,t) = exp(−(ΔΨ)² / 2σ²) · M(x,t)
-
-Where:
-  ΔΨ     = Gap between intent and reality
-  σ      = Tolerance (how much gap is acceptable)
-  M(x,t) = Lock metric (readiness score)
-```
-
-### 12.2 Binary vs. Gaussian Collapse
-
-**Binary Collapse (Medical/Legal/Compliance):**
-
-```
-Execute if and only if: ΔΨ = 0
-
-No tolerance. No probability. Exact match required.
-```
-
-Use for: Regulatory compliance, safety-critical systems, legal requirements.
-
-**Gaussian Collapse (Business Operations):**
-
-```
-P(Execute) = exp(−(ΔΨ)² / 2σ²)
-
-Soft threshold. Higher probability as gap shrinks.
-```
-
-Use for: Sales actions, marketing campaigns, resource allocation.
-
-### 12.3 The Urgency Modifier
-
-Add time pressure:
-
-```
-P_collapse(x,t) = exp(−(ΔΨ)² / 2σ²) · M(x,t) · U(t)
-
-Where U(t) = urgency function:
-  U(t) = 1 + β · max(0, (deadline - t) / deadline)^(-1)
-  
-As deadline approaches, U → ∞, forcing collapse
-```
-
-### 12.4 Scheduling Algorithm
-
-```python
-class CollapseScheduler:
-    def __init__(self, immediate_threshold=0.8, soon_threshold=0.5):
-        self.immediate_threshold = immediate_threshold
-        self.soon_threshold = soon_threshold
-        self.schedule = []
-    
-    def compute_collapse_probability(self, action, current_time):
-        gap = self.compute_gap(action.intent, action.reality)
-        lock_score = self.compute_lock_metric(action, current_time)
-        urgency = self.compute_urgency(action, current_time)
-        
-        base_prob = math.exp(-(gap**2) / (2 * action.sigma**2))
-        return base_prob * lock_score * urgency
-    
-    def schedule_actions(self, actions, current_time):
-        scheduled = []
-        
-        for action in actions:
-            p_collapse = self.compute_collapse_probability(action, current_time)
-            
-            if p_collapse > self.immediate_threshold:
-                scheduled.append({
-                    'action': action,
-                    'timing': 'immediate',
-                    'probability': p_collapse
-                })
-            elif p_collapse > self.soon_threshold:
-                delay = self.estimate_optimal_delay(action, p_collapse)
-                scheduled.append({
-                    'action': action,
-                    'timing': current_time + delay,
-                    'probability': p_collapse
-                })
-            else:
-                scheduled.append({
-                    'action': action,
-                    'timing': 'deferred',
-                    'probability': p_collapse,
-                    'review_date': self.next_review_date(action)
-                })
-        
-        return sorted(scheduled, key=lambda x: (
-            0 if x['timing'] == 'immediate' else 
-            1 if isinstance(x['timing'], (int, float)) else 2,
-            -x['probability']
-        ))
-    
-    def estimate_optimal_delay(self, action, current_prob):
-        # Estimate when probability will cross immediate threshold
-        drift_rate = action.drift_rate or 0.01
-        if drift_rate <= 0:
-            return float('inf')
-        
-        target_gap = action.sigma * math.sqrt(-2 * math.log(self.immediate_threshold))
-        current_gap = self.compute_gap(action.intent, action.reality)
-        
-        return max(0, (current_gap - target_gap) / drift_rate)
-```
-
----
-
-# Part IV: The Autonomous Layer
-
-## Chapter 13: f(Learned_Operations)
-
-### 13.1 Core Thesis
-
-The human doesn't decide operational parameters—the system learns them.
-
-### 13.2 The MDP Formulation
-
-| Component | Definition |
-|-----------|------------|
-| **State s** | [divergence_vector, capacity_vector, queue_depth, time_features, drift_rates] |
-| **Actions A** | {allocate_resources, adjust_threshold, trigger_reconciliation, defer, escalate} |
-| **Reward R** | Execution_Success − Cost − λ·Drift − μ·Delay |
-| **Policy π** | Learned via PPO/SAC |
-
-### 13.3 The State Vector
-
-```python
-def compute_state(self):
-    return np.concatenate([
-        # Divergence metrics (5 roles)
-        [self.divergence[r] for r in ['CEO', 'CIO', 'CFO', 'COO', 'CHRO']],
-        
-        # Capacity metrics
-        [self.capacity['current'], self.capacity['max'], self.queue_depth],
-        
-        # Drift rates
-        [self.drift_rate[r] for r in ['CEO', 'CIO', 'CFO', 'COO', 'CHRO']],
-        
-        # Time features
-        [self.day_of_week / 7, self.hour / 24, self.quarter / 4],
-        
-        # Historical performance
-        [self.success_rate_7d, self.error_rate_7d, self.avg_latency_7d]
-    ])
-```
-
-### 13.4 The Reward Function
-
-```python
-def compute_reward(self, action, outcome):
-    # Success component
-    success = 1.0 if outcome['completed'] else 0.0
-    
-    # Cost component (resources used)
-    cost = outcome['resources_used'] / self.max_resources
-    
-    # Drift penalty
-    drift_penalty = sum(self.drift_rate.values()) / len(self.drift_rate)
-    
-    # Delay penalty
-    delay_penalty = outcome['delay'] / self.max_acceptable_delay
-    
-    # Combine with weights
-    reward = (
-        self.w_success * success
-        - self.w_cost * cost
-        - self.w_drift * drift_penalty
-        - self.w_delay * delay_penalty
-    )
-    
-    return reward
-```
-
-### 13.5 The Learning Loop
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│              Autonomous Operations Loop                     │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  1. OBSERVE                                                 │
-│     └─ Collect divergence metrics D_r for all roles         │
-│     └─ Measure capacity utilization                         │
-│     └─ Track drift rates                                    │
-│     └─ Encode state vector s                                │
-│                                                             │
-│  2. DECIDE (Policy π)                                       │
-│     └─ Input: State vector s                                │
-│     └─ Output: Action a = π(s)                              │
-│     └─ No human in loop for routine decisions               │
-│                                                             │
-│  3. EXECUTE                                                 │
-│     └─ Apply action a                                       │
-│     └─ Measure outcome                                      │
-│     └─ Record transition (s, a, r, s')                      │
-│                                                             │
-│  4. LEARN                                                   │
-│     └─ Compute reward R                                     │
+│  5. LEARN                                                   │
 │     └─ Update policy: θ ← θ + α∇J(θ)                       │
-│     └─ Update value function                                │
-│     └─ Improve for next cycle                               │
-│                                                             │
-│  5. ADAPT                                                   │
-│     └─ Adjust thresholds based on performance               │
-│     └─ Update capacity estimates                            │
-│     └─ Refine state representation                          │
 │                                                             │
 └─────────────────────────────────────────────────────────────┘
 ```
 
-### 13.6 The Policy Gradient
+## Implementation Classes
 
-```
-∇J(θ) = E_π [Σ_t ∇_θ log π_θ(a_t|s_t) · A(s_t, a_t)]
-
-Where:
-  J(θ)     = Expected cumulative reward
-  π_θ      = Policy parameterized by θ
-  A(s,a)   = Advantage function (how much better than average)
-```
-
-### 13.7 Convergence Guarantee
-
-```
-E[Regret(T)] = O(√T) → 0 as T → ∞
-```
-
-The system provably improves over time. Mathematical guarantee, not hope.
-
-### 13.8 Human Oversight
-
-The human role shifts from deciding to:
-
-1. **Defining reward function** (what "success" means)
-2. **Setting constraints** (safety bounds, budget caps)
-3. **Monitoring trends** (ROI, error rates)
-4. **Handling exceptions** (edge cases flagged by system)
+### DivergenceCalculator
 
 ```python
-class HumanOversight:
-    def __init__(self, policy):
-        self.policy = policy
-        self.exception_threshold = 0.1  # Flag if confidence < 10%
-    
-    def decide(self, state):
-        action, confidence = self.policy.decide(state)
-        
-        if confidence < self.exception_threshold:
-            return self.escalate_to_human(state, action, confidence)
-        
-        return action
-    
-    def escalate_to_human(self, state, suggested_action, confidence):
-        # Log for human review
-        self.log_exception(state, suggested_action, confidence)
-        
-        # Block execution until human approves
-        return 'AWAIT_HUMAN_DECISION'
-```
-
----
-
-# Part V: Implementation Patterns
-
-## Chapter 14: Code Implementation Examples
-
-### 14.1 The Divergence Calculator
-
-```python
-import numpy as np
-from typing import Dict, List, Callable
-from enum import Enum
-
-class Norm(Enum):
-    L1 = 'manhattan'
-    L2 = 'euclidean'
-    LINF = 'chebyshev'
-    COSINE = 'cosine'
-
 class DivergenceCalculator:
-    def __init__(self, norm: Norm = Norm.L2):
-        self.norm = norm
-        self.history: List[Dict] = []
-    
-    def compute(self, reported: np.ndarray, truth: np.ndarray) -> float:
-        """Compute divergence between reported and truth values."""
-        if self.norm == Norm.L1:
-            return np.sum(np.abs(reported - truth))
-        elif self.norm == Norm.L2:
+    def compute(self, reported, truth, norm='L2'):
+        if norm == 'L2':
             return np.sqrt(np.sum((reported - truth) ** 2))
-        elif self.norm == Norm.LINF:
-            return np.max(np.abs(reported - truth))
-        elif self.norm == Norm.COSINE:
-            dot = np.dot(reported, truth)
-            norm_r = np.linalg.norm(reported)
-            norm_t = np.linalg.norm(truth)
-            if norm_r == 0 or norm_t == 0:
-                return 1.0
-            return 1 - dot / (norm_r * norm_t)
+        elif norm == 'L1':
+            return np.sum(np.abs(reported - truth))
     
-    def compute_by_role(self, reported: Dict[str, np.ndarray], 
-                         truth: Dict[str, np.ndarray],
-                         weights: Dict[str, float] = None) -> Dict:
-        """Compute divergence for each role."""
-        roles = ['CEO', 'CIO', 'CFO', 'COO', 'CHRO']
-        weights = weights or {r: 1.0 for r in roles}
-        
+    def compute_by_role(self, reported, truth, weights):
         divergences = {}
-        for role in roles:
-            if role in reported and role in truth:
-                divergences[role] = self.compute(reported[role], truth[role])
-            else:
-                divergences[role] = float('nan')
-        
-        # Aggregate metrics
-        valid_divs = [d for d in divergences.values() if not np.isnan(d)]
-        valid_weights = [weights[r] for r in roles if not np.isnan(divergences[r])]
-        
-        if valid_divs:
-            total_weight = sum(valid_weights)
-            weighted_sum = sum(w * d for w, d in zip(valid_weights, valid_divs))
-            divergences['total'] = weighted_sum / total_weight
-            divergences['max'] = max(valid_divs)
-            divergences['rms'] = np.sqrt(sum(w * d**2 for w, d in zip(valid_weights, valid_divs)) / total_weight)
-        
-        # Record history
-        self.history.append({
-            'timestamp': np.datetime64('now'),
-            'divergences': divergences.copy()
-        })
-        
+        for role in ['CEO', 'CIO', 'CFO', 'COO', 'CHRO']:
+            divergences[role] = self.compute(reported[role], truth[role])
+        divergences['total'] = sum(w * d for w, d in zip(weights.values(), divergences.values()))
         return divergences
-    
-    def compute_drift(self, window: int = 5) -> Dict[str, float]:
-        """Compute drift rate from recent history."""
-        if len(self.history) < 2:
-            return {}
-        
-        recent = self.history[-window:]
-        roles = ['CEO', 'CIO', 'CFO', 'COO', 'CHRO', 'total']
-        
-        drift = {}
-        for role in roles:
-            values = [h['divergences'].get(role, np.nan) for h in recent]
-            valid = [(i, v) for i, v in enumerate(values) if not np.isnan(v)]
-            
-            if len(valid) >= 2:
-                # Linear regression for drift rate
-                x = np.array([v[0] for v in valid])
-                y = np.array([v[1] for v in valid])
-                slope = np.polyfit(x, y, 1)[0]
-                drift[role] = slope
-        
-        return drift
 ```
 
-### 14.2 The Intent Energy Optimizer
+### IntentCohesionCalculator
 
 ```python
-from scipy.optimize import minimize
-import numpy as np
-
-class IntentEnergyOptimizer:
-    def __init__(self, weights: Dict[str, float] = None, power: float = 2.0):
-        self.weights = weights or {
-            'CEO': 1.0, 'CIO': 0.8, 'CFO': 0.9, 'COO': 0.7, 'CHRO': 0.6
-        }
-        self.power = power
+class IntentCohesionCalculator:
+    def compute_theta_cohesion(self, deliverables_accepted, time_elapsed, 
+                                rework_cost, total_duration):
+        R_align = deliverables_accepted / time_elapsed
+        R_drift = rework_cost / total_duration
+        
+        if R_drift == 0:
+            return float('inf')  # Perfect cohesion
+        
+        return R_align / R_drift
     
-    def compute_energy(self, divergences: Dict[str, float]) -> float:
-        """E = Σ w_r · D_r^p"""
-        energy = 0.0
-        for role, div in divergences.items():
-            if role in self.weights and not np.isnan(div):
-                energy += self.weights[role] * (div ** self.power)
-        return energy
-    
-    def compute_gradient(self, divergences: Dict[str, float]) -> Dict[str, float]:
-        """∇E = p · Σ w_r · D_r^(p-1)"""
-        gradient = {}
-        for role, div in divergences.items():
-            if role in self.weights and not np.isnan(div) and div > 0:
-                gradient[role] = self.power * self.weights[role] * (div ** (self.power - 1))
-            else:
-                gradient[role] = 0.0
-        return gradient
-    
-    def optimize_allocation(self, current_divergences: Dict[str, float],
-                           budget: float,
-                           cost_per_unit_reduction: Dict[str, float]) -> Dict[str, float]:
-        """
-        Find optimal resource allocation to minimize energy.
-        
-        Returns dict of {role: reduction_amount}
-        """
-        roles = list(current_divergences.keys())
-        n = len(roles)
-        
-        def objective(x):
-            # x = reduction amounts for each role
-            new_divs = {r: max(0, current_divergences[r] - x[i]) 
-                       for i, r in enumerate(roles)}
-            return self.compute_energy(new_divs)
-        
-        def budget_constraint(x):
-            # Total cost must be <= budget
-            return budget - sum(x[i] * cost_per_unit_reduction.get(roles[i], 1.0) 
-                               for i in range(n))
-        
-        # Initial guess: proportional to gradient
-        grad = self.compute_gradient(current_divergences)
-        x0 = np.array([grad.get(r, 0) for r in roles])
-        if np.sum(x0) > 0:
-            x0 = x0 / np.sum(x0) * budget / np.mean(list(cost_per_unit_reduction.values()))
-        else:
-            x0 = np.zeros(n)
-        
-        # Bounds: can't reduce below 0 or more than current divergence
-        bounds = [(0, current_divergences[r]) for r in roles]
-        
-        # Optimize
-        result = minimize(
-            objective,
-            x0,
-            method='SLSQP',
-            bounds=bounds,
-            constraints={'type': 'ineq', 'fun': budget_constraint}
-        )
-        
-        return {r: result.x[i] for i, r in enumerate(roles)}
+    def is_cohesive(self, theta_cohesion):
+        return theta_cohesion > 1
 ```
 
-### 14.3 The Stability Analyzer
+### OperationalValueCalculator
+
+```python
+class OperationalValueCalculator:
+    def __init__(self, alpha1, beta1):
+        self.alpha1 = alpha1  # Rigidity factor
+        self.beta1 = beta1    # Leverage factor
+    
+    def compute_A111(self, theta_drift):
+        return 1 / np.exp(self.alpha1 * (theta_drift - 1))
+    
+    def compute_A121(self, theta_cohesion):
+        return self.beta1 * (np.tanh(theta_cohesion - 1) + 1)
+    
+    def compute_V(self, R1, I1, I2, E1):
+        """
+        R1 = Resource threshold (θ_start proximity)
+        I1 = θ_drift
+        I2 = θ_cohesion  
+        E1 = θ_lock
+        """
+        term1 = self.compute_A111(I1) * I1
+        term2 = self.compute_A121(I2) * I2
+        
+        return R1 * E1 * (term1 + term2)
+```
+
+### StabilityAnalyzer
 
 ```python
 class StabilityAnalyzer:
-    def __init__(self, thresholds: Dict[str, float] = None):
-        self.thresholds = thresholds or {
-            'CEO': 0.2, 'CIO': 0.25, 'CFO': 0.15, 'COO': 0.2, 'CHRO': 0.3
-        }
-        self.truth_table = self._build_truth_table()
+    def __init__(self, thresholds):
+        self.thresholds = thresholds
     
-    def _build_truth_table(self) -> Dict[tuple, Dict]:
-        """Build the diagnostic truth table."""
+    def diagnose(self, divergences):
+        states = {r: 1 if d <= self.thresholds[r] else 0 
+                  for r, d in divergences.items()}
+        
+        stability_score = sum(states.values()) / len(states)
+        
+        unstable = [r for r, s in states.items() if s == 0]
+        
         return {
-            (1, 1, 1, 1, 1): {'state': 'STABLE', 'action': 'Maintain'},
-            (1, 1, 1, 1, 0): {'state': 'Culture Drift', 'action': 'CHRO intervention'},
-            (1, 1, 1, 0, 1): {'state': 'Execution Gap', 'action': 'COO intervention'},
-            (1, 1, 0, 1, 1): {'state': 'Financial Risk', 'action': 'CFO intervention'},
-            (1, 0, 1, 1, 1): {'state': 'Tech Debt', 'action': 'CIO intervention'},
-            (0, 1, 1, 1, 1): {'state': 'Vision Drift', 'action': 'CEO intervention'},
-            (1, 1, 0, 0, 1): {'state': 'Ops-Finance Misalign', 'action': 'Joint COO-CFO'},
-            (0, 0, 1, 1, 1): {'state': 'Strategy-Tech Gap', 'action': 'Joint CEO-CIO'},
-            (1, 0, 0, 1, 1): {'state': 'Tech-Finance Crisis', 'action': 'Joint CIO-CFO'},
-            (0, 1, 1, 0, 1): {'state': 'Strategy-Ops Gap', 'action': 'Joint CEO-COO'},
-            (0, 0, 0, 0, 0): {'state': 'CRITICAL', 'action': 'Full restructure'},
+            'states': states,
+            'stability_score': stability_score,
+            'unstable_roles': unstable,
+            'action': self.prescribe_action(unstable)
         }
-    
-    def compute_role_states(self, divergences: Dict[str, float]) -> Dict[str, int]:
-        """Convert divergences to binary states."""
-        states = {}
-        for role in ['CEO', 'CIO', 'CFO', 'COO', 'CHRO']:
-            div = divergences.get(role, float('inf'))
-            threshold = self.thresholds.get(role, 0.2)
-            states[role] = 1 if div <= threshold else 0
-        return states
-    
-    def diagnose(self, divergences: Dict[str, float]) -> Dict:
-        """Diagnose system state and prescribe action."""
-        states = self.compute_role_states(divergences)
-        state_tuple = tuple(states[r] for r in ['CEO', 'CIO', 'CFO', 'COO', 'CHRO'])
-        
-        # Look up in truth table
-        if state_tuple in self.truth_table:
-            diagnosis = self.truth_table[state_tuple].copy()
-        else:
-            # Fallback for combinations not in table
-            unstable_count = 5 - sum(state_tuple)
-            if unstable_count >= 3:
-                diagnosis = {'state': 'Multiple Failures', 'action': 'Executive review'}
-            else:
-                unstable_roles = [r for r, s in states.items() if s == 0]
-                diagnosis = {
-                    'state': f'{", ".join(unstable_roles)} Unstable',
-                    'action': f'Address {", ".join(unstable_roles)}'
-                }
-        
-        diagnosis['role_states'] = states
-        diagnosis['stability_score'] = sum(state_tuple) / 5.0
-        
-        return diagnosis
 ```
 
 ---
 
-# Part VI: Reference Architecture
+# Part VIII: Self-Application Profile
+
+## Auto-Workspace-AI MVS Vectors
+
+Applying the framework to ourselves:
+
+### Resource Vector (R¹)
+
+```
+R¹ = Allocated Compute Hours / Minimum Hours for Axiom Proof
+
+Condition: R¹ > 1 for Tension Alignment (Δ₁)
+```
+
+### Intent Vector (I^j)
+
+```
+I¹ = θ_drift = Deviation from ITT Principles / Max Acceptable Drift
+
+I² = θ_cohesion = Rate of θ metrics integrated / Rate of θ metrics discarded
+
+Conditions: I¹ ≤ 1 and I² > 1 for stable Phase Memory (Δ₂)
+```
+
+### Execution Vector (E¹)
+
+```
+E¹ = θ_lock = Validated Solution Utility / Engineering Rework Hours
+
+Condition: E¹ > 1 for Compression Lock (Δ₄)
+```
+
+### Expected Constants
+
+For Auto-Workspace-AI:
+- **α₁ >> 1**: High rigidity (strict adherence to ITT principles)
+- **β₁ >> 1**: High leverage (aligned math dramatically amplifies value)
+
+---
+
+# Part IX: Reference Architecture
 
 ## Repository Structure
 
@@ -1605,196 +817,163 @@ class StabilityAnalyzer:
 │
 ├── 0.1_f(Foundations)/
 │   ├── 0.1.a_f(Writability_Doctrine)/
-│   │   ├── README.md                      # W(x) = δ(Φ−Ψ) > ε
-│   │   └── writability.py
 │   ├── 0.1.b_f(Divergence_Metric)/
-│   │   ├── README.md                      # D_r = ||V_r − T_r(S)||
-│   │   └── divergence.py
 │   ├── 0.1.c_f(Intent_Energy)/
-│   │   ├── README.md                      # E = Σ w_r · D_r²
-│   │   └── energy.py
 │   ├── 0.1.d_f(Entropy_Economics)/
-│   │   ├── README.md                      # W(k) ~ O(e^k)
-│   │   └── entropy.py
 │   ├── 0.1.e_f(Lock_Metric)/
-│   │   ├── README.md                      # M(x,t) = α·S_curv + (1−α)·S_mem
-│   │   └── lock.py
 │   ├── 0.1.f_f(Stability_Table)/
-│   │   ├── README.md                      # Boolean function of role states
-│   │   └── stability.py
 │   ├── 0.1.g_f(Drift_Dynamics)/
-│   │   ├── README.md                      # Ḋ = ∇Ψ / ∇Φ
-│   │   └── drift.py
 │   ├── 0.1.h_f(Capacity_Function)/
-│   │   ├── README.md                      # C = B / (L + Q)
-│   │   └── capacity.py
 │   └── 0.1.i_f(Rights_Topology)/
-│       ├── README.md                      # R = Authority ∧ Scope ∧ ¬Veto
-│       └── rights.py
 │
-├── 0.2_f(Control_Decomposition)/
-│   ├── 0.2.a_f(Alignment)/
-│   │   └── README.md                      # A = 1 − D_normalized
-│   ├── 0.2.b_f(Capacity)/
-│   │   └── README.md                      # C = Available / Required
-│   └── 0.2.c_f(Rights)/
-│       └── README.md                      # R = owner ∧ authority
+├── 0.2_f(Thresholds)/
+│   ├── 0.2.a_f(Theta_Start)/
+│   ├── 0.2.b_f(Theta_Drift)/
+│   ├── 0.2.c_f(Theta_Cohesion)/          # The Critical Void (solved)
+│   └── 0.2.d_f(Theta_Lock)/
 │
-├── 0.3_f(Execution_Engine)/
-│   ├── 0.3.a_f(PRE-X_MetaMap)/
-│   │   ├── README.md                      # Precompute → Filter → Execute → Reconcile
-│   │   └── prex.py
-│   ├── 0.3.b_f(Collapse_Scheduling)/
-│   │   ├── README.md                      # P = exp(−ΔΨ²/2σ²) · M(x,t)
-│   │   └── scheduler.py
-│   └── 0.3.c_f(Batch_Processing)/
-│       ├── README.md                      # Implementation patterns
-│       └── batch.py
+├── 0.3_f(Tensors)/
+│   ├── 0.3.a_f(Resource_Vector)/
+│   ├── 0.3.b_f(Intent_Vector)/
+│   ├── 0.3.c_f(Execution_Vector)/
+│   └── 0.3.d_f(Interaction_Tensor)/
 │
-├── 0.4_f(Autonomous_Layer)/
-│   ├── 0.4.a_f(Learned_Operations)/
-│   │   ├── README.md                      # MDP formulation
-│   │   └── rl_agent.py
-│   ├── 0.4.b_f(Drift_Correction)/
-│   │   ├── README.md                      # PID control
-│   │   └── controller.py
-│   └── 0.4.c_f(Policy_Optimization)/
-│       ├── README.md                      # θ ← θ + α∇J(θ)
-│       └── policy.py
+├── 0.4_f(Calculus)/
+│   ├── 0.4.a_f(Intent_Truth_Probability)/
+│   ├── 0.4.b_f(KPI_Proxies)/
+│   └── 0.4.c_f(Collapse_Prediction)/
 │
-├── 0.5_f(Implementation)/
-│   ├── 0.5.a_f(Python)/
-│   │   └── autoworkspace/                 # Python package
-│   ├── 0.5.b_f(JavaScript)/
-│   │   └── src/                           # JS/TS implementation
-│   └── 0.5.c_f(Apps_Script)/
-│       └── Code.gs                        # Google Apps Script
+├── 0.5_f(Control_Decomposition)/
+│   ├── 0.5.a_f(Alignment)/
+│   ├── 0.5.b_f(Capacity)/
+│   └── 0.5.c_f(Rights)/
 │
-└── 0.6_f(Examples)/
-    ├── 0.6.a_f(Case_Studies)/
-    ├── 0.6.b_f(Benchmarks)/
-    └── 0.6.c_f(Tutorials)/
+├── 0.6_f(Execution_Engine)/
+│   ├── 0.6.a_f(PRE-X_MetaMap)/
+│   ├── 0.6.b_f(Collapse_Scheduling)/
+│   └── 0.6.c_f(Batch_Processing)/
+│
+├── 0.7_f(Autonomous_Layer)/
+│   ├── 0.7.a_f(Learned_Operations)/
+│   ├── 0.7.b_f(Drift_Correction)/
+│   └── 0.7.c_f(Policy_Optimization)/
+│
+├── 0.8_f(Implementation)/
+│   ├── 0.8.a_f(Python)/
+│   ├── 0.8.b_f(JavaScript)/
+│   └── 0.8.c_f(Apps_Script)/
+│
+└── 0.9_f(White_Papers)/
+    ├── Intent_Truth_Calculus.md
+    ├── Operational_Value_Tensor.md
+    ├── Theta_Cohesion_Derivation.md
+    ├── Axioms_of_Intent.md
+    ├── Axioms_of_Execution.md
+    └── Interaction_Tensor_Solution.md
 ```
 
 ---
 
 ## Complete Equation Stack
 
-### The Master Equation
+### Master Equations
 
 ```
-                                    A(t) · C(t) · R(t)
-f(Execution) = W(Φ,Ψ,ε) · γ^t · ∫  ─────────────────── dτ
-                                    D(τ) + F(τ) + H(τ)
+┌─────────────────────────────────────────────────────────────┐
+│                    MASTER EQUATIONS                         │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│ Execution Equation:                                         │
+│                         A · C · R                           │
+│   f(Execution) = W · ∫ ─────────── dτ · γ^t                │
+│                         D + F + H                           │
+│                                                             │
+│ Operational Value Tensor:                                   │
+│   V = A_ijk R^i I^j E^k                                    │
+│                                                             │
+│ MVS Solution:                                               │
+│   V = R¹E¹[(1/e^(α₁(θ_drift-1))·θ_drift) +                │
+│           (β₁[tanh(θ_cohesion-1)+1]·θ_cohesion)]          │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+### Threshold Equations
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                  THRESHOLD EQUATIONS                        │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│ θ_drift = Deviation / Buffer                               │
+│                                                             │
+│ θ_cohesion = R_Align / R_Drift                             │
+│   where R_Align = Accepted Value / Time                     │
+│         R_Drift = Rework Cost / Duration                    │
+│                                                             │
+│ θ_lock = Value Score / Entropy                             │
+│                                                             │
+│ Recursive Integrity: θ_cohesion > 1 required               │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+### Tensor Components
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│               INTERACTION TENSOR COMPONENTS                 │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│ A_111 = 1 / e^(α₁ · (θ_drift - 1))                        │
+│   └─ Exponential penalty for drift                          │
+│                                                             │
+│ A_121 = β₁ · [tanh(θ_cohesion - 1) + 1]                   │
+│   └─ Threshold-gated growth for cohesion                    │
+│                                                             │
+│ Organizational Constants:                                   │
+│   α₁ = Rigidity Factor (drift sensitivity)                 │
+│   β₁ = Leverage Factor (cohesion amplification)            │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+### Probability Equations
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│              INTENT-TRUTH PROBABILITY                       │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│ Lock Metric:                                                │
+│   M(t) = α · S_curv(t) + (1-α) · S_mem(t)                  │
+│                                                             │
+│ Collapse Probability:                                       │
+│   T_prob(M) = σ(κ · (M - θ))                               │
+│                                                             │
+│ Where σ(x) = 1 / (1 + e^(-x))                              │
+│                                                             │
+│ Recommended: α=0.6, θ=0.75, κ=12                           │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
 ```
 
 ### Foundation Equations
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│                   FOUNDATION EQUATIONS                      │
+│                 FOUNDATION EQUATIONS                        │
 ├─────────────────────────────────────────────────────────────┤
 │                                                             │
-│ 1. Writability Gate                                         │
-│    W(x) = δ(Φ(x) − Ψ(x)) > ε                               │
-│    W_soft(x) = exp(−ΔΨ²/2ε²)                               │
-│                                                             │
-│ 2. Divergence Metric                                        │
-│    D_r = ||V_r − T_r(S)||                                  │
-│    D_total = Σ w_r · D_r                                   │
-│    D_rms = √(Σ w_r · D_r² / Σ w_r)                        │
-│                                                             │
-│ 3. Intent Energy                                            │
-│    E = Σ w_r · D_r²                                        │
-│    ∇E = 2 · Σ w_r · D_r · ∇D_r                            │
-│                                                             │
-│ 4. Entropy Cost                                             │
-│    W(k) ~ O(k² · n) → O(e^k)                               │
-│    Tax(k) = C_base · k · (k-1) / 2                         │
-│                                                             │
-│ 5. Lock Metric                                              │
-│    M(x,t) = α·S_curv(x) + (1−α)·S_mem(x,t)                │
-│    S_curv = |∇²Φ| / max|∇²Φ|                               │
-│    S_mem = ∫ Evidence(τ) · γ^(t-τ) dτ                      │
-│                                                             │
-│ 6. Stability Function                                       │
-│    S = CEO ∧ CIO ∧ CFO ∧ COO ∧ CHRO                        │
-│    Role_State(r) = 1 if D_r ≤ θ_r else 0                   │
-│                                                             │
-│ 7. Drift Dynamics                                           │
-│    Ḋ = ∂D/∂t = ∇Ψ / ∇Φ                                    │
-│    u(t) = K_p·D + K_i·∫D dτ + K_d·Ḋ  (PID control)        │
-│                                                             │
-│ 8. Capacity Function                                        │
-│    C(t) = B(t) / [L(t) + Q(t)]                             │
-│    ρ = λ/μ  (utilization)                                  │
-│                                                             │
-│ 9. Rights Topology                                          │
-│    R = Authority(a,d) ∧ Scope(d,c) ∧ ¬Veto(d)             │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-### Control Components
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│                   CONTROL DECOMPOSITION                     │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│ Alignment:    A = 1 − (D_r / D_max)                        │
-│                                                             │
-│ Capacity:     C = Resources_Available / Resources_Required  │
-│                                                             │
-│ Rights:       R = clear_owner ∧ authority_granted ∧ ¬veto  │
-│                                                             │
-│ Control = A × C × R / (Drift + Friction + Entropy)          │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-### Execution Equations
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│                   EXECUTION EQUATIONS                       │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│ Collapse Probability:                                       │
-│    P(x,t) = exp(−ΔΨ²/2σ²) · M(x,t) · U(t)                 │
-│                                                             │
-│ Drift Rate:                                                 │
-│    Ḋ = ∇Ψ / ∇Φ                                            │
-│                                                             │
-│ Correction Force:                                           │
-│    ΔΦ = −k · D_r  (proportional)                           │
-│    u = K_p·D + K_i·∫D + K_d·Ḋ  (PID)                      │
-│                                                             │
-│ Time to Critical:                                           │
-│    t_crit = (θ_crit − D) / Ḋ                              │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-### Autonomous Learning Equations
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│                 AUTONOMOUS LEARNING                         │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│ Policy Gradient:                                            │
-│    ∇J(θ) = E_π [Σ ∇_θ log π_θ(a|s) · A(s,a)]              │
-│    θ ← θ + α · ∇J(θ)                                       │
-│                                                             │
-│ Value Function:                                             │
-│    V(s) = E_π [Σ γ^t · r_t | s_0 = s]                      │
-│                                                             │
-│ Advantage:                                                  │
-│    A(s,a) = Q(s,a) − V(s)                                  │
-│                                                             │
-│ Regret Bound:                                               │
-│    E[R(T)] = O(√T) → 0 as T → ∞                           │
+│ Writability:     W(x) = δ(Φ(x) − Ψ(x)) > ε                │
+│ Divergence:      D_r = ||V_r − T_r(S)||                    │
+│ Intent Energy:   E = Σ w_r · D_r²                          │
+│ Entropy Cost:    W(k) ~ O(k² · n) → O(e^k)                 │
+│ Lock Metric:     M(x,t) = α·S_curv + (1−α)·S_mem          │
+│ Stability:       S = CEO ∧ CIO ∧ CFO ∧ COO ∧ CHRO          │
+│ Drift Rate:      Ḋ = ∂D/∂t = ∇Ψ / ∇Φ                      │
+│ Capacity:        C(t) = B(t) / [L(t) + Q(t)]               │
+│ Rights:          R = Authority ∧ Scope ∧ ¬Veto             │
 │                                                             │
 └─────────────────────────────────────────────────────────────┘
 ```
@@ -1806,18 +985,13 @@ f(Execution) = W(Φ,Ψ,ε) · γ^t · ∫  ────────────�
 | Legacy Term | This Framework | Equation |
 |-------------|----------------|----------|
 | Control | f(Execution) | [A·C·R] / [D+F+H] |
+| Value | Operational Value | V = A_ijk R^i I^j E^k |
 | Alignment | Divergence Inverse | A = 1 − D_normalized |
-| Efficiency | Writability Ratio | W_count / Total_count |
-| Coordination | Rights Function | R = owner ∧ authority ∧ ¬veto |
-| Planning | Intent Field | Φ(x) |
-| Execution | Collapse | P = exp(−ΔΨ²/2σ²) · M |
-| Monitoring | Drift Tracking | Ḋ = ∂D/∂t |
-| Optimization | Energy Minimization | min E = Σ w_r · D_r² |
-| Forecasting | Drift Prediction | D(t+Δt) ≈ D(t) + Ḋ·Δt |
-| Risk Management | Stability Analysis | Truth table lookup |
-| Resource Allocation | Capacity Function | C = B / (L + Q) |
-| Decision Making | Lock Metric | M > θ_lock → execute |
-| Learning | Policy Gradient | θ ← θ + α∇J |
+| Strategy-Execution Gap | Intent Cohesion | θ_cohesion = R_Align / R_Drift |
+| Efficiency | Writability Ratio | W_count / Total |
+| Risk Tolerance | Drift Threshold | θ_drift |
+| ROI | Operational Value | V (scalar output) |
+| Synergy | Cohesion Amplification | β₁ · [tanh(θ_cohesion-1)+1] |
 
 ---
 
@@ -1827,9 +1001,9 @@ This framework synthesizes:
 
 | Source | Year | Contribution |
 |--------|------|--------------|
-| Taylor | 1911 | Scientific measurement of work |
-| Shannon | 1948 | Information theory, entropy |
-| Bellman | 1957 | Dynamic programming, MDP |
+| Taylor | 1911 | Scientific measurement |
+| Shannon | 1948 | Information theory |
+| Bellman | 1957 | Dynamic programming |
 | Drucker | 1954 | Management by objectives |
 | Beer | 1972 | Viable System Model |
 | Kaplan & Norton | 1992 | Balanced Scorecard |
@@ -1847,14 +1021,13 @@ A business where:
 - No human manually reconciles spreadsheets
 - No human guesses at "alignment"
 - No human debates "control"
-- No human schedules without collapse probability
-- No human allocates without energy optimization
+- No human assumes strategy translates to execution without measuring θ_cohesion
+- No human allocates without computing V
 
-The human defines intent (Φ).  
-The machine computes divergence (D).  
-The math optimizes allocation (∇E).  
-The system schedules collapse (M > θ).  
-The policy learns improvement (∇J).
+The human defines intent (Φ).
+The machine computes thresholds (θ).
+The tensor calculates value (V).
+The math decides when to collapse (M > θ_lock).
 
 **This is not automation. This is autonomy.**
 
@@ -1868,13 +1041,14 @@ This document is the **business application layer** of Intent Tensor Theory.
 |-------------|---------------------|
 | Φ (Intent Field) | Strategic objectives, KPIs |
 | Ψ (Reality State) | Current metrics, actuals |
-| ∇Φ (Intent Gradient) | Direction of desired change |
-| ∇²Φ (Laplacian/Collapse) | Execution lock point |
+| ∇Φ (Gradient) | Direction of change |
+| ∇×F (Curl) | Memory loops, culture |
+| ∇²Φ (Laplacian) | Execution lock point |
 | W (Writability) | Eligibility for action |
-| κ (Curvent) | Execution force |
+| ICHTB Fan Surfaces | Business operator gates |
 
-The parent theory provides the mathematical foundation.  
-f(AutoWorkspace) provides the business computation.
+The parent theory provides mathematical foundation.
+f(AutoWorkspace) provides business computation.
 
 Together: **The Math of Business.**
 
@@ -1885,3 +1059,11 @@ Together: **The Math of Business.**
 *Built on Intent Tensor Theory — https://github.com/intent-tensor-theory*
 
 *Part of the Auto-Workspace-AI ecosystem — https://auto-workspace-ai.com*
+
+---
+
+**Human Collaborators:** Abdullah Khan, Armstrong Knight
+
+**AI Collaborators:** ChatGPT, Claude, Gemini, Grok
+
+*No egos. Just math.*
