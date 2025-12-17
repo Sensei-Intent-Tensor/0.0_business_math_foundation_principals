@@ -5,6 +5,33 @@
 **Auto-Workspace-AI / Intent Tensor Theory Institute**
 
 ---
+The Core Declaration
+The Spreadsheet Tensor:
+S∈VNs×Nr×Nc\mathbf{S} \in V^{N_s \times N_r \times N_c}S∈VNs​×Nr​×Nc​
+A spreadsheet is a rank-3 tensor. Period. Not metaphorically — literally.
+
+The Three Master Equations
+1. The State Equation — How spreadsheets respond to input:
+
+S(t)=E(F,S(t−))⋅(I−P)+X(t)⋅P\mathbf{S}(t) = \mathcal{E}(\mathbf{F}, \mathbf{S}(t^-)) \cdot (\mathbf{I} - \mathbf{P}) + \mathbf{X}(t) \cdot \mathbf{P}S(t)=E(F,S(t−))⋅(I−P)+X(t)⋅P
+2. The Computation Equation — How evaluation propagates:
+
+S∗=∑k=0KEk(F∘Lk)\mathbf{S}^* = \sum_{k=0}^{K} \mathcal{E}_k(\mathbf{F} \circ \mathbf{L}_k)S∗=k=0∑K​Ek​(F∘Lk​)
+3. The Recursive Structure Equation — The self-similarity:
+
+S=R(3)(R(2)(R(1)(V)))\mathbf{S} = \mathcal{R}^{(3)}(\mathcal{R}^{(2)}(\mathcal{R}^{(1)}(V)))S=R(3)(R(2)(R(1)(V)))
+
+Key Contributions Beyond Prior Art
+What ExistsWhat We FormalizedOperational semantics (evaluation rules)Tensor-algebraic structureType systems for error detectionDependency as rank-6 tensorFunctional programming modelsOperations as tensor contractionsCategory-theoretic treatmentsRecursive self-similarity axiom
+
+The Bridge to Intent Tensor Theory
+The document explicitly connects spreadsheet dimensions to business primitives:
+
+Sheet → Business unit / time period / scenario
+Row → Entity instance
+Column → Attribute / measure
+
+This makes f(AutoWorkspace) computable inside standard spreadsheet tools — the tensor structure was always there, just unnamed.
 
 ## §1. Primitive Declarations
 
