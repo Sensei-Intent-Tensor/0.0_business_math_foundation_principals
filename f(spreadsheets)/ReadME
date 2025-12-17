@@ -1,0 +1,352 @@
+# Spreadsheet Tensor Theory (STT)
+## A Formal Mathematical Framework
+
+**Version 0.1 — Draft for Review**
+**Auto-Workspace-AI / Intent Tensor Theory Institute**
+
+---
+
+## §1. Primitive Declarations
+
+### Definition 1.1 — The Spreadsheet Tensor
+
+A spreadsheet is a rank-3 tensor over a value space V:
+
+$$\mathbf{S} \in V^{N_s \times N_r \times N_c}$$
+
+Where:
+- $N_s$ = number of sheets (depth dimension)
+- $N_r$ = number of rows (vertical dimension)  
+- $N_c$ = number of columns (horizontal dimension)
+- $V$ = the value space (reals, strings, booleans, errors, or null)
+
+Individual cell access uses index notation:
+
+$$S^{s}_{rc} \equiv \mathbf{S}[s][r][c]$$
+
+Where superscript $s$ denotes sheet index and subscript $rc$ denotes row-column position.
+
+---
+
+### Definition 1.2 — The Value Space
+
+The value space V is a tagged union:
+
+$$V = \mathbb{R} \cup \Sigma^* \cup \mathbb{B} \cup \mathcal{E} \cup \{\emptyset\}$$
+
+Where:
+- $\mathbb{R}$ = real numbers
+- $\Sigma^*$ = strings over alphabet Σ
+- $\mathbb{B} = \{true, false\}$
+- $\mathcal{E} = \{\#REF!, \#VALUE!, \#DIV/0!, \#NAME?, \#NULL!, \#N/A, \#NUM!\}$
+- $\emptyset$ = null/empty cell
+
+---
+
+### Definition 1.3 — The Formula Tensor
+
+Parallel to the value tensor, a spreadsheet contains a formula tensor:
+
+$$\mathbf{F} \in (\mathcal{L} \cup \{\emptyset\})^{N_s \times N_r \times N_c}$$
+
+Where $\mathcal{L}$ is the language of valid spreadsheet formulas. Each cell either contains a formula or is a literal value (∅ in formula space).
+
+---
+
+## §2. The Recursive Self-Similarity Axiom
+
+### Axiom 2.1 — Structural Recursion
+
+The spreadsheet tensor exhibits self-similar structure at each rank reduction:
+
+$$\mathbf{S} = \bigoplus_{s=1}^{N_s} \mathbf{S}^{(s)}$$
+
+Where $\mathbf{S}^{(s)}$ is the rank-2 sheet tensor (a matrix):
+
+$$\mathbf{S}^{(s)} = \bigoplus_{r=1}^{N_r} \mathbf{S}^{(s)}_r$$
+
+Where $\mathbf{S}^{(s)}_r$ is the rank-1 row tensor (a vector):
+
+$$\mathbf{S}^{(s)}_r = \bigoplus_{c=1}^{N_c} S^{s}_{rc}$$
+
+Where $S^{s}_{rc}$ is the rank-0 cell tensor (a scalar).
+
+The direct sum $\bigoplus$ preserves independence while maintaining structural composition.
+
+---
+
+### Definition 2.2 — The Scale Invariance Property
+
+Let $\Pi_k$ be the projection operator onto rank-k substructure. The spreadsheet satisfies:
+
+$$\Pi_k(\mathbf{S}) \cong \Pi_k(\Pi_{k+1}(\mathbf{S}))$$
+
+Meaning: the structure of a sheet within a workbook is isomorphic to the structure of a row within a sheet. The containment relation is scale-invariant.
+
+---
+
+## §3. The Dependency Tensor
+
+### Definition 3.1 — Reference Adjacency
+
+The dependency structure of a spreadsheet is captured by a rank-6 binary tensor:
+
+$$\mathbf{D} \in \{0,1\}^{N_s \times N_r \times N_c \times N_s \times N_r \times N_c}$$
+
+Where:
+
+$$D^{s_1 s_2}_{r_1 c_1 r_2 c_2} = \begin{cases} 1 & \text{if cell } (s_1, r_1, c_1) \text{ references } (s_2, r_2, c_2) \\ 0 & \text{otherwise} \end{cases}$$
+
+This encodes the complete dependency graph as a tensor.
+
+---
+
+### Definition 3.2 — The Dependency Matrix (Flattened Form)
+
+For computational tractability, flatten to a rank-2 adjacency matrix:
+
+$$\mathbf{A} \in \{0,1\}^{M \times M}$$
+
+Where $M = N_s \cdot N_r \cdot N_c$ (total cells) and indices are linearized:
+
+$$\phi(s, r, c) = s \cdot (N_r \cdot N_c) + r \cdot N_c + c$$
+
+---
+
+### Theorem 3.3 — Acyclicity Condition
+
+A spreadsheet is well-formed if and only if its dependency matrix is nilpotent:
+
+$$\exists k \in \mathbb{N} : \mathbf{A}^k = \mathbf{0}$$
+
+**Proof sketch:** If $\mathbf{A}^k \neq \mathbf{0}$ for all k, then there exists a path of length k for arbitrarily large k, implying a cycle. Cycles create circular references, which are undefined in standard spreadsheet semantics. ∎
+
+---
+
+## §4. The Evaluation Operator
+
+### Definition 4.1 — The Cell Evaluation Function
+
+Define the evaluation operator $\mathcal{E}$ that maps formula tensor to value tensor:
+
+$$\mathcal{E}: \mathbf{F} \times \mathbf{S} \rightarrow \mathbf{S}'$$
+
+For each cell:
+
+$$S'^{s}_{rc} = \mathcal{E}(F^{s}_{rc}, \mathbf{S})$$
+
+Where the evaluation depends on the current state of referenced cells.
+
+---
+
+### Definition 4.2 — Topological Evaluation Order
+
+Given dependency matrix $\mathbf{A}$, evaluation proceeds in topological order. Define the level function:
+
+$$\ell(i) = \begin{cases} 0 & \text{if } \sum_j A_{ij} = 0 \text{ (no dependencies)} \\ 1 + \max_{j: A_{ij}=1} \ell(j) & \text{otherwise} \end{cases}$$
+
+Cells at level 0 are literals. Cells at level k depend only on cells at levels < k.
+
+---
+
+### Theorem 4.3 — The Fixed Point Theorem
+
+For a well-formed spreadsheet, evaluation converges to a unique fixed point:
+
+$$\mathbf{S}^* = \lim_{n \to \infty} \mathcal{E}^n(\mathbf{F}, \mathbf{S}_0)$$
+
+Where $\mathbf{S}^*$ satisfies:
+
+$$\mathcal{E}(\mathbf{F}, \mathbf{S}^*) = \mathbf{S}^*$$
+
+**Proof:** By Theorem 3.3, the dependency graph is a DAG. Topological sort guarantees finite evaluation depth. Each cell evaluates exactly once given its dependencies, yielding deterministic convergence. ∎
+
+---
+
+## §5. Operations as Tensor Transformations
+
+### Definition 5.1 — Slice Operators
+
+**Sheet selection** (rank reduction 3→2):
+$$\mathbf{S}^{(s)} = \mathbf{S}[s, :, :] \in V^{N_r \times N_c}$$
+
+**Row selection** (rank reduction 3→1):
+$$\mathbf{S}^{(s)}_r = \mathbf{S}[s, r, :] \in V^{N_c}$$
+
+**Column selection** (rank reduction 3→1):
+$$\mathbf{S}^{(s)}_{:,c} = \mathbf{S}[s, :, c] \in V^{N_r}$$
+
+**Range selection** (subspace extraction):
+$$\mathbf{S}[s, r_1:r_2, c_1:c_2] \in V^{(r_2-r_1+1) \times (c_2-c_1+1)}$$
+
+---
+
+### Definition 5.2 — Contraction Operations (Aggregations)
+
+**SUM** is tensor contraction over specified indices:
+
+$$\text{SUM}(\mathbf{S}[s, r_1:r_2, c]) = \sum_{r=r_1}^{r_2} S^s_{rc}$$
+
+Generalized with Einstein summation convention:
+
+$$\text{SUM}(\mathbf{S}^{(s)}_{:,c}) = S^s_{ic} \delta^i$$
+
+Where $\delta^i = 1$ for all i (the all-ones covector contracts the index).
+
+---
+
+### Definition 5.3 — VLOOKUP as Indexed Selection
+
+VLOOKUP performs a search-and-select operation:
+
+$$\text{VLOOKUP}(v, \mathbf{S}[s, :, c_1:c_n], k) = S^s_{r^* c_k}$$
+
+Where:
+$$r^* = \min\{r : S^s_{rc_1} = v\}$$
+
+This is equivalent to:
+1. Constructing a match indicator: $m_r = \delta(S^s_{rc_1}, v)$
+2. Applying masked selection: $S^s_{r^* c_k} = m_r \cdot S^s_{rc_k}$ (first non-zero)
+
+---
+
+### Definition 5.4 — SUMIF as Masked Contraction
+
+$$\text{SUMIF}(\mathbf{S}[s,:,c_{cond}], \text{cond}, \mathbf{S}[s,:,c_{sum}]) = \sum_r M_r \cdot S^s_{r,c_{sum}}$$
+
+Where the mask tensor is:
+$$M_r = \mathbb{1}[\text{cond}(S^s_{r,c_{cond}})]$$
+
+This is a **masked tensor contraction** — the fundamental pattern behind conditional aggregation.
+
+---
+
+## §6. The Master Equations
+
+### §6.1 — The Spreadsheet State Equation
+
+The complete state of a spreadsheet at time t is:
+
+$$\boxed{\mathbf{S}(t) = \mathcal{E}\left(\mathbf{F}, \mathbf{S}(t^-)\right) \cdot (\mathbf{I} - \mathbf{P}) + \mathbf{X}(t) \cdot \mathbf{P}}$$
+
+Where:
+- $\mathbf{S}(t)$ = value tensor at time t
+- $\mathbf{S}(t^-)$ = value tensor immediately before input
+- $\mathbf{F}$ = formula tensor (static)
+- $\mathcal{E}$ = evaluation operator
+- $\mathbf{X}(t)$ = external input tensor at time t
+- $\mathbf{P}$ = input mask tensor ($P^s_{rc} = 1$ if cell receives external input)
+- $\mathbf{I}$ = identity tensor
+
+**Interpretation:** Cells either receive external input (masked by P) or compute from formulas (masked by I - P).
+
+---
+
+### §6.2 — The Spreadsheet Computation Equation
+
+For a well-formed spreadsheet with maximum dependency depth K:
+
+$$\boxed{\mathbf{S}^* = \sum_{k=0}^{K} \mathcal{E}_k\left(\mathbf{F} \circ \mathbf{L}_k\right)}$$
+
+Where:
+- $\mathbf{L}_k$ = level-k cell mask (cells with dependency level exactly k)
+- $\mathcal{E}_k$ = evaluation restricted to level-k cells
+- $\circ$ = Hadamard (element-wise) product
+
+**Interpretation:** Total evaluation is the sum of layered evaluations, proceeding from literals (k=0) through maximum depth (k=K).
+
+---
+
+### §6.3 — The Recursive Structure Equation
+
+The self-similar property is captured by:
+
+$$\boxed{\mathbf{S} = \mathcal{R}^{(3)}\left(\mathcal{R}^{(2)}\left(\mathcal{R}^{(1)}(V)\right)\right)}$$
+
+Where $\mathcal{R}^{(n)}$ is the rank-n array constructor:
+
+$$\mathcal{R}^{(n)}(T) = T^{d_n} \quad \text{(n-dimensional array of type T)}$$
+
+Expanding:
+- $\mathcal{R}^{(1)}(V) = V^{N_c}$ (row: array of values)
+- $\mathcal{R}^{(2)}(V^{N_c}) = (V^{N_c})^{N_r}$ (sheet: array of rows)
+- $\mathcal{R}^{(3)}((V^{N_c})^{N_r}) = ((V^{N_c})^{N_r})^{N_s}$ (workbook: array of sheets)
+
+This recursive construction is **definitionally equivalent** to the flat tensor $V^{N_s \times N_r \times N_c}$.
+
+---
+
+## §7. Operational Implications
+
+### Theorem 7.1 — Parallelization by Level
+
+Cells at the same dependency level can be evaluated in parallel:
+
+$$\mathbf{S}_k = \text{parallel\_map}(\mathcal{E}, \mathbf{F} \circ \mathbf{L}_k)$$
+
+**Corollary:** Maximum parallelization achieves O(K) sequential steps regardless of cell count M.
+
+---
+
+### Theorem 7.2 — Change Propagation
+
+Given a change $\Delta \mathbf{S}$ at cells C, the affected cells are:
+
+$$\text{affected}(C) = \{j : (\mathbf{A}^+)_{ij} > 0 \text{ for any } i \in C\}$$
+
+Where $\mathbf{A}^+$ is the transitive closure of the dependency matrix.
+
+**Corollary:** Incremental recalculation need only evaluate affected(C), not the entire tensor.
+
+---
+
+## §8. Connection to Intent Tensor Theory
+
+### Definition 8.1 — The Business Interpretation
+
+In the context of Auto-Workspace-AI, the spreadsheet tensor maps to organizational structure:
+
+| Tensor Dimension | Business Interpretation |
+|-----------------|------------------------|
+| Sheet (s) | Business unit, time period, or scenario |
+| Row (r) | Entity instance (employee, transaction, product) |
+| Column (c) | Attribute or measure |
+
+---
+
+### Definition 8.2 — The Operational Value Projection
+
+The f(AutoWorkspace) Operational Value Tensor projects onto spreadsheet structure:
+
+$$V = A_{ijk} R^i I^j E^k \quad \longleftrightarrow \quad S^s_{rc}$$
+
+Where business primitives (Autonomy, Resources, Intent, Execution) instantiate as cell values in the spreadsheet tensor.
+
+---
+
+## §9. Summary of Fundamental Equations
+
+| Name | Equation | Meaning |
+|------|----------|---------|
+| **Tensor Definition** | $S^s_{rc} \in V$ | Cell as rank-0 tensor element |
+| **Recursive Structure** | $\mathbf{S} = \bigoplus_s \bigoplus_r \bigoplus_c S^s_{rc}$ | Self-similar composition |
+| **Dependency Encoding** | $D^{s_1 s_2}_{r_1 c_1 r_2 c_2} \in \{0,1\}$ | Reference graph as tensor |
+| **Well-Formedness** | $\exists k: \mathbf{A}^k = \mathbf{0}$ | Acyclicity condition |
+| **Fixed Point** | $\mathcal{E}(\mathbf{F}, \mathbf{S}^*) = \mathbf{S}^*$ | Evaluation convergence |
+| **State Equation** | $\mathbf{S}(t) = \mathcal{E}(\mathbf{F}, \mathbf{S}(t^-))(\mathbf{I}-\mathbf{P}) + \mathbf{X}(t)\mathbf{P}$ | Input-compute dynamics |
+| **Layered Evaluation** | $\mathbf{S}^* = \sum_k \mathcal{E}_k(\mathbf{F} \circ \mathbf{L}_k)$ | Topological computation |
+
+---
+
+## §10. Open Questions
+
+1. **Categorical formulation:** Can the recursive structure be expressed as a terminal coalgebra?
+2. **Differential structure:** Is there a meaningful notion of $\partial S^s_{rc} / \partial S^{s'}_{r'c'}$ for sensitivity analysis?
+3. **Quantum extension:** Can spreadsheet superposition enable probabilistic scenario modeling?
+4. **Compression:** What is the minimum description length of a spreadsheet given its tensor structure?
+
+---
+
+**Document Status:** Draft 0.1  
+**Next Steps:** Peer review, proof verification, implementation examples  
+**Contact:** Auto-Workspace-AI / Intent Tensor Theory Institute
